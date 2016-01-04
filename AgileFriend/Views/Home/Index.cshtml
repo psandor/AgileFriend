@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("JiraBoard", "Home"))
+{
+    <textarea name="JiraTasks" rows="20" cols="80"></textarea>
+    <input type="text" name="taskType" />
+    <input type="submit" value="Create"/>
+}
+
+<h2>Index</h2>

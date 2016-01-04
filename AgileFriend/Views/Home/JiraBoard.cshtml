@@ -1,0 +1,12 @@
+﻿@model IList<AgileFriend.Models.JiraTaskModel>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<div class="agile-board">
+    @foreach (var jiraTask in Model)
+    {
+        @Html.DisplayFor(m => jiraTask)
+    }
+</div>

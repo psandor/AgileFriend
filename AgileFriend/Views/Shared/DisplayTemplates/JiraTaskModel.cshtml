@@ -1,0 +1,12 @@
+﻿@model AgileFriend.Models.JiraTaskModel
+
+<div class="jira-task">
+    <header>
+        <div class="title">@Model.Id</div>
+        <div class="parent">@Model.ParentId</div>
+    </header>
+    <div class="content">
+        <span>@Model.Summary</span>
+        <div class="assigne">@Model.TaskType</div>
+    </div>
+</div>
